@@ -42,12 +42,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user/:userid" element={<User />} />
-      <Route 
-      loader={githubinfoloader}
-      path="github" 
-      element={<Github />}
-      
-       />
+      <Route loader={githubinfoloader} path="github" element={<Github />} />
     </Route>
   )
 );
@@ -56,3 +51,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+//https://reactrouter.com/en/main/start/overview
+//https://github.com/hiteshchoudhary/chai-aur-react/blob/main/07reactRouter/src/main.jsx
+// https://github.com/hirdeshmewada/react-code
